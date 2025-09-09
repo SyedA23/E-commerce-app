@@ -34,7 +34,7 @@ export default function ProductList() {
         <h3>Categories</h3>
         <ul>
           <li>All</li>
-          <li>Cloths</li>
+          <li>Clothes</li>
           <li>Electronics</li>
           <li>Furniture</li>
           <li>Shoes</li>
