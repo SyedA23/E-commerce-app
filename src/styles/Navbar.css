@@ -2,41 +2,76 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111827;
-  color: white;
-  padding: 10px 20px;
+  padding: 0.8rem 1.5rem;
+  background-color: #1f2937;
+  color: #fff;
 }
 
 .logo a {
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
-  color: white;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .search {
-  width: 300px;
-  padding: 6px;
-  border-radius: 6px;
+  flex: 1;
+  max-width: 300px;
+  margin: 0 2rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
   border: none;
+  outline: none;
 }
 
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 1.5rem;
 }
 
-.nav-actions a {
-  text-decoration: none;
+.icon-link {
+  position: relative;
+  color: #fff;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.icon-link .icon {
+  font-size: 1.4rem;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: red;
   color: white;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  font-weight: bold;
+}
+
+.nav-actions a:hover {
+  color: #ffd700;
 }
 
 .login-btn {
-  background: white;
-  color: black;
-  border: none;
-  border-radius: 6px;
-  padding: 6px 12px;
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 0.4rem 0.9rem;
+  border-radius: 5px;
+  color: #fff;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login-btn:hover {
+  background: #fff;
+  color: #333;
 }
