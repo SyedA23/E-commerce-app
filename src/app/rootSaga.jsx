@@ -1,7 +1,7 @@
 import { all } from "redux-saga/effects";
-import { productSaga } from "../features/products/productSaga";
 import { cartSaga } from "../features/cart/cartSaga";
+import { productsSaga } from "../features/products/productSaga";
 
-export default function* rootSaga() {
-  yield all([productSaga(), cartSaga()]);
+export function* rootSaga() {
+  yield all([cartSaga(), productsSaga()]);
 }
